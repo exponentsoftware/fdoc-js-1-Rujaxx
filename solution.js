@@ -40,7 +40,7 @@ const countWords=(sentence)=>{
     let array = sentence.split(" ")
     let size = array.length
     for(let i=0;i<size;i++){
-        if(array[i].length>1){
+        if(array[i].length > 1){
         count+=1
         }
     }
@@ -61,12 +61,12 @@ console.log(varietyOfWords(sentence))
 
 //Second
 for(let line = "#";line.length<8;i+="#")
-    console.log(line)
+    console.log(line);
 
 function getRandomNumbers(){
     let arr = [];
     while(arr.length < 7){
-        let r = Math.floor(Math.random() * 9 + 1);
+        let r = Math.floor(Math.random() * 9);
         if(arr.indexOf(r) === -1) arr.push(r);
     }
 return arr
@@ -74,7 +74,7 @@ return arr
 console.log(getRandomNumbers());
 
 const reverseArray=(array)=>{
-    let reversed = array.reverse()
+    let reversed = array.pop()
     return reversed
 }
 
